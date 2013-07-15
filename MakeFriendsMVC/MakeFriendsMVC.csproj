@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -108,6 +109,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -130,11 +132,35 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MakeFriends.BLL\MakeFriends.BLL.csproj">
+      <Project>{161dd79d-1827-416f-b023-ad28bcded36c}</Project>
+      <Name>MakeFriends.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MakeFriends.Common\MakeFriends.Common.csproj">
+      <Project>{22758f0e-b8d7-437a-86e9-30fb58b90e3f}</Project>
+      <Name>MakeFriends.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MakeFriends.DAL\MakeFriends.DAL.csproj">
+      <Project>{d175750e-4876-48fb-9c8c-f8662267f835}</Project>
+      <Name>MakeFriends.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MakeFriends.Entities\MakeFriends.Entities.csproj">
+      <Project>{38ac8157-2f9c-4733-b629-865e636943ca}</Project>
+      <Name>MakeFriends.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MakeFriends.Log\MakeFriends.Log.csproj">
+      <Project>{67649d0e-eae6-4b1f-90ef-894c2e0a4b03}</Project>
+      <Name>MakeFriends.Log</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Test\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
