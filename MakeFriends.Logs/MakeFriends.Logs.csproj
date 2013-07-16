@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{161DD79D-1827-416F-B023-AD28BCDED36C}</ProjectGuid>
+    <ProjectGuid>{E8161855-DEF5-460B-89C0-7D8836F7BC24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MakeFriends.BLL</RootNamespace>
-    <AssemblyName>MakeFriends.BLL</AssemblyName>
+    <RootNamespace>MakeFriends.Logs</RootNamespace>
+    <AssemblyName>MakeFriends.Logs</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,17 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MakeFriends.Common\MakeFriends.Common.csproj">
-      <Project>{22758f0e-b8d7-437a-86e9-30fb58b90e3f}</Project>
-      <Name>MakeFriends.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MakeFriends.Entities\MakeFriends.Entities.csproj">
-      <Project>{38ac8157-2f9c-4733-b629-865e636943ca}</Project>
-      <Name>MakeFriends.Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

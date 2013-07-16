@@ -155,10 +155,6 @@
       <Project>{38ac8157-2f9c-4733-b629-865e636943ca}</Project>
       <Name>MakeFriends.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MakeFriends.Log\MakeFriends.Log.csproj">
-      <Project>{67649d0e-eae6-4b1f-90ef-894c2e0a4b03}</Project>
-      <Name>MakeFriends.Log</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Test\Index.cshtml" />

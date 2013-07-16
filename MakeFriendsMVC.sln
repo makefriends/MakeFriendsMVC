@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeFriendsMVC", "MakeFriendsMVC\MakeFriendsMVC.csproj", "{FCE78DC4-C5B0-4335-8118-0BA1BA2E1D32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeFriends.Log", "MakeFriends.Log\MakeFriends.Log.csproj", "{67649D0E-EAE6-4B1F-90EF-894C2E0A4B03}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeFriends.Entities", "MakeFriends.Entities\MakeFriends.Entities.csproj", "{38AC8157-2F9C-4733-B629-865E636943CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeFriends.Common", "MakeFriends.Common\MakeFriends.Common.csproj", "{22758F0E-B8D7-437A-86E9-30FB58B90E3F}"
@@ -12,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeFriends.DAL", "MakeFriends.DAL\MakeFriends.DAL.csproj", "{D175750E-4876-48FB-9C8C-F8662267F835}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeFriends.BLL", "MakeFriends.BLL\MakeFriends.BLL.csproj", "{161DD79D-1827-416F-B023-AD28BCDED36C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeFriends.Logs", "MakeFriends.Logs\MakeFriends.Logs.csproj", "{E8161855-DEF5-460B-89C0-7D8836F7BC24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{FCE78DC4-C5B0-4335-8118-0BA1BA2E1D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCE78DC4-C5B0-4335-8118-0BA1BA2E1D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCE78DC4-C5B0-4335-8118-0BA1BA2E1D32}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67649D0E-EAE6-4B1F-90EF-894C2E0A4B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67649D0E-EAE6-4B1F-90EF-894C2E0A4B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67649D0E-EAE6-4B1F-90EF-894C2E0A4B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67649D0E-EAE6-4B1F-90EF-894C2E0A4B03}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38AC8157-2F9C-4733-B629-865E636943CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38AC8157-2F9C-4733-B629-865E636943CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AC8157-2F9C-4733-B629-865E636943CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +39,10 @@ Global
 		{161DD79D-1827-416F-B023-AD28BCDED36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{161DD79D-1827-416F-B023-AD28BCDED36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{161DD79D-1827-416F-B023-AD28BCDED36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8161855-DEF5-460B-89C0-7D8836F7BC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8161855-DEF5-460B-89C0-7D8836F7BC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8161855-DEF5-460B-89C0-7D8836F7BC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8161855-DEF5-460B-89C0-7D8836F7BC24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

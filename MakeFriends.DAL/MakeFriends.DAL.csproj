@@ -49,9 +49,9 @@
       <Project>{22758f0e-b8d7-437a-86e9-30fb58b90e3f}</Project>
       <Name>MakeFriends.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MakeFriends.Log\MakeFriends.Log.csproj">
-      <Project>{67649d0e-eae6-4b1f-90ef-894c2e0a4b03}</Project>
-      <Name>MakeFriends.Log</Name>
+    <ProjectReference Include="..\MakeFriends.Logs\MakeFriends.Logs.csproj">
+      <Project>{e8161855-def5-460b-89c0-7d8836f7bc24}</Project>
+      <Name>MakeFriends.Logs</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
