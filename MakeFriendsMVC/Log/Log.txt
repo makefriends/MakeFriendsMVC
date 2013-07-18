@@ -1,0 +1,57 @@
+07/17/2013 04:52:45 PM~System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName)
+   at System.Data.Common.DbProviderFactories.GetFactory(DataRow providerRow)
+   at System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSyntheticConfigSettings.GetDefaultMapping(String dbProviderName) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Configuration\DatabaseSyntheticConfigSettings.cs:line 256
+   at Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSyntheticConfigSettings.GetProviderMapping(String dbProviderName, DatabaseSettings databaseSettings) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Configuration\DatabaseSyntheticConfigSettings.cs:line 242
+   at Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSyntheticConfigSettings.GetDatabaseData(ConnectionStringSettings connectionString, DatabaseSettings databaseSettings) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Configuration\DatabaseSyntheticConfigSettings.cs:line 155
+   at Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSyntheticConfigSettings.<get_Databases>d__0.MoveNext() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Configuration\DatabaseSyntheticConfigSettings.cs:line 94
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSyntheticConfigSettings.<DoGetRegistrations>d__10.MoveNext() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Configuration\DatabaseSyntheticConfigSettings.cs:line 323
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSyntheticConfigSettings.GetRegistrations(IConfigurationSource configurationSource) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Configuration\DatabaseSyntheticConfigSettings.cs:line 307
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.TypeLoadingLocator.<GetRegistrations>b__0(ITypeRegistrationsProvider p, IConfigurationSource cs) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\ContainerModel\TypeLoadingLocator.cs:line 67
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.TypeLoadingLocator.GetRegistrationsInternal(IConfigurationSource configurationSource, Func`3 registrationAccessor) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\ContainerModel\TypeLoadingLocator.cs:line 90
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.TypeLoadingLocator.GetRegistrations(IConfigurationSource configurationSource) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\ContainerModel\TypeLoadingLocator.cs:line 67
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.CompositeTypeRegistrationsProviderLocator.<GetRegistrations>b__0(ITypeRegistrationsProvider l, IConfigurationSource cs) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\ContainerModel\TypeRegistrationsProvider.cs:line 128
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.CompositeTypeRegistrationsProviderLocator.<>c__DisplayClass5.<GetRegistrationsInternal>b__4(ITypeRegistrationsProvider l) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\ContainerModel\TypeRegistrationsProvider.cs:line 147
+   at System.Linq.Enumerable.<SelectManyIterator>d__14`2.MoveNext()
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.Unity.UnityContainerConfigurator.RegisterAllCore(IConfigurationSource configurationSource, ITypeRegistrationsProvider rootProvider) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\ContainerModel\Unity\UnityContainerConfigurator.cs:line 61
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ContainerModel.ChangeTrackingContainerConfigurator.RegisterAll(IConfigurationSource configurationSource, ITypeRegistrationsProvider rootProvider) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\ContainerModel\ChangeTrackingContainerConfigurator.cs:line 66
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.EnterpriseLibraryContainer.ConfigureContainer(ITypeRegistrationsProvider locator, IContainerConfigurator configurator, IConfigurationSource configSource) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\EnterpriseLibraryContainer.cs:line 83
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.EnterpriseLibraryContainer.ConfigureContainer(IContainerConfigurator configurator, IConfigurationSource configSource) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\EnterpriseLibraryContainer.cs:line 62
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.EnterpriseLibraryContainer.CreateDefaultContainer(IConfigurationSource configurationSource) in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\EnterpriseLibraryContainer.cs:line 122
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.EnterpriseLibraryContainer.CreateDefaultContainer() in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\EnterpriseLibraryContainer.cs:line 108
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.EnterpriseLibraryContainer.SetCurrentContainerIfNotSet() in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\EnterpriseLibraryContainer.cs:line 95
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.EnterpriseLibraryContainer.get_Current() in e:\Builds\EntLib\Latest\Source\Blocks\Common\Src\Configuration\EnterpriseLibraryContainer.cs:line 36
+   at Microsoft.Practices.EnterpriseLibrary.Data.DatabaseFactory.InnerCreateDatabase(String name) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\DatabaseFactory.cs:line 76
+   at Microsoft.Practices.EnterpriseLibrary.Data.DatabaseFactory.CreateDatabase() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\DatabaseFactory.cs:line 40
+   at MakeFriends.DAL.DALBase.GetReader(Object entity, Boolean filterByPrimaryKey, Boolean filterByForeignKey) in c:\Users\evgenig\Documents\GitHub\MakeFriendsMVC\MakeFriends.DAL\DALBase.cs:line 175
+   at MakeFriends.DAL.DAL.GetOneItem(Entity entity) in c:\Users\evgenig\Documents\GitHub\MakeFriendsMVC\MakeFriends.DAL\DAL.cs:line 71
+
+=== Pre-bind state information ===
+LOG: User = PERION\evgenig
+LOG: DisplayName = MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d
+ (Fully-specified)
+LOG: Appbase = file:///C:/Users/evgenig/Documents/GitHub/MakeFriendsMVC/MakeFriendsMVC/
+LOG: Initial PrivatePath = C:\Users\evgenig\Documents\GitHub\MakeFriendsMVC\MakeFriendsMVC\bin
+Calling assembly : (Unknown).
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: C:\Users\evgenig\Documents\GitHub\MakeFriendsMVC\MakeFriendsMVC\web.config
+LOG: Using host configuration file: C:\Users\evgenig\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/root/949843a9/43c6e9c0/MySql.Data.DLL.
+LOG: Attempting download of new URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/root/949843a9/43c6e9c0/MySql.Data/MySql.Data.DLL.
+LOG: Attempting download of new URL file:///C:/Users/evgenig/Documents/GitHub/MakeFriendsMVC/MakeFriendsMVC/bin/MySql.Data.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Minor Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+

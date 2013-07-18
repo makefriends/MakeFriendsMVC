@@ -32,7 +32,7 @@ namespace MakeFriends.Log
 
         public static Configuration GetConfiguration()
         {
-            return ConfigurationManager.GetSection("MakeFriends.Log") as Configuration;
+            return ConfigurationManager.GetSection("MakeFriends.Logs") as Configuration;
         }
     }
 }
