@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MakeFriendsMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,12 +14,14 @@ namespace MakeFriendsMVC.Controllers
 
         public ActionResult Login()
         {
-            return View();
+            LoginModel model = new LoginModel();
+            return View(model);
         }
 
         [HttpPost()]
-        public ActionResult Login(string userName, string password)
+        public ActionResult Login(LoginModel model)
         {
+            
             return View();
         }
 

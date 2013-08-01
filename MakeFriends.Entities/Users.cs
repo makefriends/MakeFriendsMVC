@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using MakeFriends.Common;
 using MakeFriends.Common.Data;
 
 namespace MakeFriends.Entities
 {
     [DBAction("users")]
-    public class Users : Common.Entity
+    public class Users : Entity
     {
         [DBField("user_id", isKey = true, IsIdentity = true, IsSearchField = true)]
         public int user_id { get; set; }

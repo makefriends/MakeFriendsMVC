@@ -1,0 +1,58 @@
+﻿@model MakeFriendsMVC.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MakeFriends.cshtml";
+}
+<div class="container">
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+                               <h2 class="form-signin-heading">@Resources.Strings.SingUp</h2>
+                               
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.FirstName, new { @class= "control-label" })
+                                    <div class="controls">
+                                         @Html.TextBoxFor(m => m.FirstName, new { placeholder = Resources.Strings.EGFirstName })
+                                         @Html.ValidationMessageFor(m => m.FirstName)
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.LastName, new { @class= "control-label" })
+                                    <div class="controls">
+                                         @Html.TextBoxFor(m => m.LastName, new { placeholder = Resources.Strings.EGLastName })
+                                         @Html.ValidationMessageFor(m => m.LastName)
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                   @Html.LabelFor(m => m.Email, new { @class= "control-label" })
+                                    <div class="controls">
+                                         @Html.TextBoxFor(m => m.Email, new { placeholder = Resources.Strings.EGEmail })
+                                         @Html.ValidationMessageFor(m => m.Email)
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                   @Html.LabelFor(m => m.UserName, new { @class= "control-label" })
+                                    <div class="controls">
+                                         @Html.TextBoxFor(m => m.UserName, new { placeholder = Resources.Strings.EGUserName })
+                                         @Html.ValidationMessageFor(m => m.UserName)
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.Password, new { @class= "control-label" })
+                                    <div class="controls">
+                                         @Html.TextBoxFor(m => m.Password, new { placeholder = Resources.Strings.EGPassword })
+                                         @Html.ValidationMessageFor(m => m.Password)
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <label class="checkbox">
+                                            <input type="checkbox"> I agree all your <a href="#">Terms of Services</a>
+                                        </label>
+                                        <button type="submit" class="btn btn-success">@Resources.Strings.SingUp</button>
+                                    </div>
+                                </div>	
+}
+
+    </div>

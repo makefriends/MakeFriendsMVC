@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MakeFriendsMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,15 @@ namespace MakeFriendsMVC.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            RegisterModel model = new RegisterModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Register(RegisterModel model)
+        {
+
+            return View(model);
         }
 
     }
